@@ -8,6 +8,18 @@ namespace Filtration.Migrations
         public override void Up()
         {
             CreateTable(
+                "dbo.LoggingContactsVisitors",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        SessionId = c.String(),
+                        UserLogin = c.String(),
+                        UserEmail = c.String(),
+                        VisitedDate = c.DateTime(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
                 "dbo.LoggingExceptions",
                 c => new
                     {
@@ -111,6 +123,7 @@ namespace Filtration.Migrations
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
             DropTable("dbo.LoggingExceptions");
+            DropTable("dbo.LoggingContactsVisitors");
         }
     }
 }

@@ -15,7 +15,7 @@
             
             @if (User.IsInRole(RoleNames.SalesManager))
             {
-                <li>@Html.ActionLink("Список посетителей Контакты", "ErrorList", "Errors")</li>
+                <li>@Html.ActionLink("Список посетителей Контакты", "VisitorsList", "SalesManager")</li>
             }
 
             <li>@Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new {title = "Manage"})</li>

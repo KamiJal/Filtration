@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Filtration.Filters;
 using Filtration.Models;
 using Filtration.Utility;
 
 namespace Filtration.Controllers
 {
-    [Authorize(Roles = RoleNames.Admin)]
-    [Authorize(Users = UserNames.Manager)]
+    [ErrorListAuthorize(Users = UserNames.Manager, Roles = RoleNames.Admin)]
     public class ErrorsController : Controller
     {
         // GET: Errors
