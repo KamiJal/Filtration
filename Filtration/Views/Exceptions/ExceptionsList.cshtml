@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "ExceptionsList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="page-header">
+    <h3>ВЫЗВАТЬ ИСКЛЮЧЕНИЕ</h3>
+</section>
+
+
+<section>
+    <h4>Список исключений</h4>
+
+    <p>@Html.ActionLink("NullReferenceException", "GetNullReferenceException")</p>
+    <p>@Html.ActionLink("ArgumentNullException", "GetArgumentNullException")</p>
+    <p>@Html.ActionLink("ArgumentOutOfRangeException", "GetArgumentOutOfRangeException")</p>
+    <p>@Html.ActionLink("DivideByZeroException", "GetDivideByZeroException")</p>
+    <p>@Html.ActionLink("FileNotFoundException", "GetFileNotFoundException")</p>
+    <p>@Html.ActionLink("IndexOutOfRangeException", "GetIndexOutOfRangeException")</p>
+    <p>@Html.ActionLink("InvalidOperationException", "GetInvalidOperationException")</p>
+
+</section>
+

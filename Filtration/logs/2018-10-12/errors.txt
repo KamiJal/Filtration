@@ -1,0 +1,3 @@
+2018-10-12 23:22:27.3120|ERROR|Filtration.Models.LoggingManager|Filtration.Models.LoggingException
+2018-10-12 23:27:06.3096|ERROR|Filtration.Models.LoggingManager|aqic13z0j5kafw43c4qcg03bIndexOutOfRangeExceptionИндекс находился вне границ массива.
+2018-10-12 23:33:53.0546|ERROR|Filtration.Models.LoggingManager|{ userId = "", sessionId = "pebol3ju2pw0rfpjehx4vhic", exceptionName = "DivideByZeroException", exceptionMessage = "Попытка деления на нуль." }
